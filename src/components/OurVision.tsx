@@ -1,27 +1,28 @@
+
 import { Check } from "lucide-react";
 
 const OurVision = () => {
   const values = [
     {
-      title: "Elevated Living Spaces",
-      description: "Creating exceptional living environments that blend luxury with functionality.",
+      title: "最高級の居住空間",
+      description: "贅沢さと機能性を兼ね備えた、卓越した居住環境を創造します。",
     },
     {
-      title: "Sustainable Communities",
-      description: "Building eco-conscious developments that respect and enhance their surroundings.",
+      title: "持続可能なコミュニティ",
+      description: "環境に配慮し、周辺環境と調和した開発を推進します。",
     },
     {
-      title: "Expert Guidance",
-      description: "Providing professional expertise and personalized service at every step.",
+      title: "専門家によるサポート",
+      description: "すべての段階で、専門的な知識と個別対応のサービスを提供します。",
     },
   ];
 
   return (
     <section className="py-20">
       <div className="container mx-auto px-4 max-w-6xl text-center">
-        <h2 className="text-4xl font-display text-estate-800 mb-4">Our Vision</h2>
+        <h2 className="text-4xl font-display text-estate-800 mb-4">私たちのビジョン</h2>
         <p className="text-estate-500 mb-12 mx-auto max-w-2xl">
-          Our mission is to create innovative, sustainable communities that set new standards.
+          革新的で持続可能なコミュニティを創造し、新たな基準を確立することを目指しています。
         </p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {values.map((value, index) => (

@@ -1,3 +1,4 @@
+
 import {
   Carousel,
   CarouselContent,
@@ -9,21 +10,21 @@ import {
 const Testimonials = () => {
   const testimonials = [
     {
-      name: "Sarah Johnson",
-      role: "Homeowner",
-      text: "Elite Real Estate exceeded all our expectations, delivering exceptional service and phenomenal results. Their expertise and attention to detail made our home buying experience truly remarkable.",
+      name: "佐藤 美咲",
+      role: "マンションオーナー",
+      text: "エリート不動産のサービスは私たちの期待を大きく上回るものでした。彼らの専門知識と細部へのこだわりにより、住宅購入の経験が素晴らしいものとなりました。",
     },
     {
-      name: "Michael Chen",
-      role: "Property Investor",
-      text: "Working with Elite Real Estate has been transformative for our investment portfolio. Their market insights and professional guidance have been invaluable.",
+      name: "田中 健一",
+      role: "不動産投資家",
+      text: "エリート不動産との取引は、私たちの投資ポートフォリオに大きな価値をもたらしました。彼らの市場洞察力と専門的なガイダンスは非常に貴重でした。",
     },
   ];
 
   return (
     <section className="py-20 bg-estate-50">
       <div className="container mx-auto px-4 max-w-6xl text-center">
-        <h2 className="text-4xl font-display text-estate-800 mb-4">Testimonials</h2>
+        <h2 className="text-4xl font-display text-estate-800 mb-4">お客様の声</h2>
         <Carousel className="max-w-4xl mx-auto">
           <CarouselContent>
             {testimonials.map((testimonial, index) => (

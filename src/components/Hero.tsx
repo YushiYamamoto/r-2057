@@ -1,3 +1,4 @@
+
 import SearchBar from "./SearchBar";
 
 const Hero = () => {
@@ -13,10 +14,10 @@ const Hero = () => {
       </div>
       <div className="relative z-10 container mx-auto px-8 text-center">
         <h1 className="text-6xl md:text-8xl font-display text-white mb-8 leading-tight max-w-3xl mx-auto">
-          Experience Elevated Living
+          最高級の住まいを
         </h1>
         <p className="text-xl text-white/90 mb-12 max-w-2xl mx-auto">
-          Discover exceptional properties and sustainable living spaces designed for modern lifestyles.
+          現代のライフスタイルに合わせた、贅沢で持続可能な居住空間をご提案いたします。
         </p>
         <div className="max-w-2xl mx-auto">
           <SearchBar />
