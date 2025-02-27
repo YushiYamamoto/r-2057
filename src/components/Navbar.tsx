@@ -51,13 +51,6 @@ const Navbar = () => {
             >
               お問い合わせ
             </a>
-            <Button 
-              variant="outline" 
-              className="text-black border-white bg-white hover:bg-white/90"
-              onClick={() => scrollToSection('contact')}
-            >
-              お問い合わせ
-            </Button>
           </div>
 
           {/* Mobile Navigation */}
@@ -75,7 +68,13 @@ const Navbar = () => {
                     onClick={(e) => { 
                       e.preventDefault(); 
                       scrollToSection('properties');
-                      document.querySelector('[data-radix-collection-item]')?.click();
+                      const sheet = document.querySelector('[data-state="open"]');
+                      if (sheet) {
+                        const closeButton = sheet.querySelector('button[aria-label="Close"]');
+                        if (closeButton instanceof HTMLElement) {
+                          closeButton.click();
+                        }
+                      }
                     }} 
                     className="text-lg cursor-pointer"
                   >
@@ -86,7 +85,13 @@ const Navbar = () => {
                     onClick={(e) => { 
                       e.preventDefault(); 
                       scrollToSection('about');
-                      document.querySelector('[data-radix-collection-item]')?.click();
+                      const sheet = document.querySelector('[data-state="open"]');
+                      if (sheet) {
+                        const closeButton = sheet.querySelector('button[aria-label="Close"]');
+                        if (closeButton instanceof HTMLElement) {
+                          closeButton.click();
+                        }
+                      }
                     }} 
                     className="text-lg cursor-pointer"
                   >
@@ -97,7 +102,13 @@ const Navbar = () => {
                     onClick={(e) => { 
                       e.preventDefault(); 
                       scrollToSection('testimonials');
-                      document.querySelector('[data-radix-collection-item]')?.click();
+                      const sheet = document.querySelector('[data-state="open"]');
+                      if (sheet) {
+                        const closeButton = sheet.querySelector('button[aria-label="Close"]');
+                        if (closeButton instanceof HTMLElement) {
+                          closeButton.click();
+                        }
+                      }
                     }} 
                     className="text-lg cursor-pointer"
                   >
@@ -108,21 +119,18 @@ const Navbar = () => {
                     onClick={(e) => { 
                       e.preventDefault(); 
                       scrollToSection('contact');
-                      document.querySelector('[data-radix-collection-item]')?.click();
+                      const sheet = document.querySelector('[data-state="open"]');
+                      if (sheet) {
+                        const closeButton = sheet.querySelector('button[aria-label="Close"]');
+                        if (closeButton instanceof HTMLElement) {
+                          closeButton.click();
+                        }
+                      }
                     }} 
                     className="text-lg cursor-pointer"
                   >
                     お問い合わせ
                   </a>
-                  <Button 
-                    className="w-full text-black bg-white hover:bg-white/90"
-                    onClick={() => {
-                      scrollToSection('contact');
-                      document.querySelector('[data-radix-collection-item]')?.click();
-                    }}
-                  >
-                    お問い合わせ
-                  </Button>
                 </div>
               </SheetContent>
             </Sheet>
