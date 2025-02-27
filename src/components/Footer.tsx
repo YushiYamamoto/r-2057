@@ -3,7 +3,7 @@ import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-estate-800 text-white py-16">
+    <div className="bg-estate-800 text-white py-16">
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
           <div>
@@ -15,10 +15,10 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">クイックリンク</h4>
             <ul className="space-y-2 text-estate-300">
-              <li><a href="#" className="hover:text-white transition-colors">物件一覧</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">会社概要</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">サービス</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">お問い合わせ</a></li>
+              <li><a href="#properties" className="hover:text-white transition-colors">物件一覧</a></li>
+              <li><a href="#about" className="hover:text-white transition-colors">会社概要</a></li>
+              <li><a href="#testimonials" className="hover:text-white transition-colors">お客様の声</a></li>
+              <li><a href="#contact" className="hover:text-white transition-colors">お問い合わせ</a></li>
             </ul>
           </div>
           <div>
@@ -44,7 +44,7 @@ const Footer = () => {
           <p>&copy; {new Date().getFullYear()} エリート不動産. All rights reserved.</p>
         </div>
       </div>
-    </footer>
+    </div>
   );
 };
 

@@ -13,17 +13,26 @@ const Index = () => {
       <Navbar />
       <Hero />
       
-      <section className="py-32">
+      <section id="properties" className="py-32">
         <div className="container mx-auto px-4 max-w-6xl text-center">
           <h2 className="text-5xl font-display text-estate-800 mb-16">厳選物件</h2>
           <PropertyGrid />
         </div>
       </section>
 
-      <AboutUs />
+      <section id="about">
+        <AboutUs />
+      </section>
+      
       <OurVision />
-      <Testimonials />
-      <Footer />
+      
+      <section id="testimonials">
+        <Testimonials />
+      </section>
+      
+      <section id="contact">
+        <Footer />
+      </section>
     </div>
   );
 };

@@ -22,7 +22,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="py-20 bg-estate-50">
+    <div className="py-20 bg-estate-50">
       <div className="container mx-auto px-4 max-w-6xl text-center">
         <h2 className="text-4xl font-display text-estate-800 mb-4">お客様の声</h2>
         <Carousel className="max-w-4xl mx-auto">
@@ -47,7 +47,7 @@ const Testimonials = () => {
           <CarouselNext />
         </Carousel>
       </div>
-    </section>
+    </div>
   );
 };
 
